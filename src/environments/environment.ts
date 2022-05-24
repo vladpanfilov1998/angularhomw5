@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  API:'https://jsonplaceholder.typicode.com'
+  baseUrl: 'https://owu.linkpc.net/api/v3'
 };

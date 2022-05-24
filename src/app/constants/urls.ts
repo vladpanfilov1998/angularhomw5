@@ -1,9 +1,9 @@
-import {environment} from '../../environments/environment';
+import {environment} from "../../environments/environment";
 
-const {API} = environment;
+const baseUrl = environment.baseUrl;
 
 export const urls = {
-  users: `${API}/users`,
-  posts: `${API}/posts`,
-  comments: `${API}/comments`,
+  auth: `${baseUrl}/auth`,
+  users: `${baseUrl}/users`,
+  cars: `${baseUrl}/cars`,
 }
