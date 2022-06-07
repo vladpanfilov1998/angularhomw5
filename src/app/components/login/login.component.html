@@ -1,0 +1,6 @@
+<form [formGroup]="formLogin">
+  <div><label>username: <input formControlName="username" type="text"></label></div>
+  <div *ngIf="userNameError">{{userNameError}}</div>
+  <div><label>password: <input formControlName="password" type="text"></label></div>
+  <button (click)="login()">Login</button>
+</form>

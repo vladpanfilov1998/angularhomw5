@@ -1,0 +1,15 @@
+<form [formGroup]="formCar">
+  <div><label>model: <input formControlName="model" type="text"></label></div>
+  <div><label>year: <input formControlName="year" type="text"></label></div>
+  <div><label>price: <input formControlName="price" type="text"></label></div>
+  <button (click)="save()">{{!carForUpdate ? 'save' : 'update'}}</button>
+</form>
+<hr>
+
+<div>
+  <div *ngFor="let car of cars">
+    {{car.id}} -- {{car.model}} -- {{car.year}} -- {{car.price}}
+    <button (click)="update(car)">update</button>
+    <button (click)="delete(car.id)">delete</button>
+  </div>
+</div>
